@@ -25,4 +25,9 @@ require("lazy").setup({
 	require("plugins.lsp"), -- Toggle true/false, numbers etc.
 	require("plugins.autocompletion"), -- Autocompletion engine
 	require("plugins.none-ls"), -- Formatter
+	require("plugins.which-key"), -- Display keymap on screen.
+	require("plugins.gitsigns"), -- Git Signs
+	require("plugins.misc"), -- Misc plugins
+	require("plugins.mini"), -- Mini plugins
+	require("plugins.snacks"), -- Snacks plugins
 })
