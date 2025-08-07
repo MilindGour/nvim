@@ -37,5 +37,19 @@ return {
 			end,
 			desc = "Open LazyGit",
 		},
+		{
+			"<leader>gl",
+			function()
+				Snacks.lazygit.log_file()
+			end,
+			desc = "Open Git filelog",
+		},
+		{
+			"<leader>gL",
+			function()
+				Snacks.lazygit.log()
+			end,
+			desc = "Open Git log",
+		},
 	},
 }
