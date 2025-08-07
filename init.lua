@@ -30,4 +30,5 @@ require("lazy").setup({
 	require("plugins.misc"), -- Misc plugins
 	require("plugins.mini"), -- Mini plugins
 	require("plugins.snacks"), -- Snacks plugins
+	require("plugins.lualine"), -- Lua line status bar
 })

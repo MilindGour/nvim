@@ -14,13 +14,19 @@ return {
 				offsets = {
 					{
 						filetype = "neo-tree",
-						text = "File Explorer",
 						text_align = "left",
 						separator = true,
 					},
 				},
+				separator_style = "thin",
 				diagnostics = false,
 				color_icons = true,
+				highlights = {
+					buffer_selected = {
+						italic = false,
+						bold = true,
+					},
+				},
 			},
 		})
 	end,
