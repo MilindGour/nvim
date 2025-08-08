@@ -32,4 +32,5 @@ require("lazy").setup({
 	require("plugins.snacks"), -- Snacks plugins
 	require("plugins.lualine"), -- Lua line status bar
 	require("plugins.treesitter"), -- Treesitter for syntax better highlighting
+	require("plugins.noice"), -- Replacing commandline with popups
 })
