@@ -26,6 +26,7 @@ nmap("<C-k>", "<C-w>k", opts)
 -- buffer movements
 nmap("H", "<cmd>bprev<CR>", opts)
 nmap("L", "<cmd>bnext<CR>", opts)
+nmap("<leader><Tab>", "<cmd>b#<CR>", opts)
 
 -- Diagnostics
 nmap("<leader>dd", vim.diagnostic.open_float, opts)
