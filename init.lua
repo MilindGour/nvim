@@ -24,11 +24,12 @@ require("lazy").setup({
 	require("plugins.dial"), -- Toggle true/false, numbers etc.
 	require("plugins.lsp"), -- Toggle true/false, numbers etc.
 	require("plugins.autocompletion"), -- Autocompletion engine
-	require("plugins.none-ls"), -- Formatter
+	require("plugins.conform"), -- Formatter
 	require("plugins.which-key"), -- Display keymap on screen.
 	require("plugins.gitsigns"), -- Git Signs
 	require("plugins.misc"), -- Misc plugins
 	require("plugins.mini"), -- Mini plugins
 	require("plugins.snacks"), -- Snacks plugins
 	require("plugins.lualine"), -- Lua line status bar
+	require("plugins.treesitter"), -- Treesitter for syntax better highlighting
 })

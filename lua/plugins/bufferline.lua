@@ -7,21 +7,26 @@ return {
 		bufferline.setup({
 			options = {
 				indicator = {
-					style = "icon",
+					style = "none",
 				},
 				buffer_close_icon = "󰅖",
+				always_show_bufferline = false,
 				close_icon = "󰅖",
 				offsets = {
 					{
 						filetype = "neo-tree",
 						text_align = "left",
-						separator = true,
+						text = "File Explorer",
+						separator = false,
 					},
 				},
-				separator_style = "thin",
+				separator_style = { "", "" },
 				diagnostics = false,
 				color_icons = true,
 				highlights = {
+					fill = {
+						bg = "#ff0000",
+					},
 					buffer_selected = {
 						italic = false,
 						bold = true,
