@@ -6,11 +6,24 @@ return {
 	},
 	opts = {
 		defaults = {
+			border = true,
+			prompt_prefix = "󰁔 ",
+			path_display = { "truncate" },
+			selection_caret = "󰁔 ",
+			wrap_results = true,
 			mappings = {
 				i = {
 					["<C-h>"] = "which_key",
 					["<C-j>"] = "move_selection_next",
 					["<C-k>"] = "move_selection_previous",
+				},
+			},
+		},
+		pickers = {
+			find_files = {
+				layout_config = {
+					width = 0.99,
+					preview_width = 0.6,
 				},
 			},
 		},
