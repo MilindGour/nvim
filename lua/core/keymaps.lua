@@ -1,35 +1,30 @@
+local h = require("core.helper")
 -- All the general keymaps should be here
 
 -- leader keys
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- helper function
-local opts = { noremap = true, silent = true }
-local nmap = function(lhs, rhs, opts)
-	vim.keymap.set("n", lhs, rhs, opts)
-end
-
 -- Disable space in normal mode
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
 -- Stay in indent mode
-vim.keymap.set("v", "<", "<gv", opts)
-vim.keymap.set("v", ">", ">gv", opts)
+vim.keymap.set("v", "<", "<gv", { noremap = true, silent = true })
+vim.keymap.set("v", ">", ">gv", { noremap = true, silent = true })
 
 -- general window movements
-nmap("<C-h>", "<C-w>h", opts)
-nmap("<C-l>", "<C-w>l", opts)
-nmap("<C-j>", "<C-w>j", opts)
-nmap("<C-k>", "<C-w>k", opts)
+h.nmap("<C-h>", "<C-w>h", { desc = "Move to left window" })
+h.nmap("<C-l>", "<C-w>l", { desc = "Move to right window" })
+h.nmap("<C-j>", "<C-w>j", { desc = "Move to lower window" })
+h.nmap("<C-k>", "<C-w>k", { desc = "Move to upper window" })
 
 -- buffer movements
-nmap("H", "<cmd>bprev<CR>", opts)
-nmap("L", "<cmd>bnext<CR>", opts)
-nmap("<leader><Tab>", "<cmd>b#<CR>", opts)
+h.nmap("H", "<cmd>bprev<CR>", { desc = "Move to previous buffer" })
+h.nmap("L", "<cmd>bnext<CR>", { desc = "Move to next buffer" })
+h.nmap("<leader><Tab>", "<cmd>b#<CR>", { desc = "Move to alternate buffer" })
 
 -- Diagnostics
-nmap("<leader>dd", vim.diagnostic.open_float, opts)
+h.nmap("<leader>D", vim.diagnostic.open_float, { desc = "Open Diagnostics" })
 
 -- Toggle line wrapping
-vim.keymap.set("n", "<leader>lw", "<cmd>set wrap!<CR>", opts)
+vim.keymap.set("n", "<leader>lw", "<cmd>set wrap!<CR>")
