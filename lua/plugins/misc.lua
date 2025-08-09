@@ -3,17 +3,10 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		opts = {},
 	},
+	{ "MunifTanjim/nui.nvim", lazy = true },
 	{
-		"rcarriga/nvim-notify",
-		lazy = false,
-		priority = 500,
-		config = function()
-			require("notify").setup({
-				background_colour = "#000000",
-				render = "compact",
-				stages = "static",
-			})
-		end,
+		"stevearc/dressing.nvim",
+		opts = {},
 	},
 	{
 		"folke/todo-comments.nvim",
