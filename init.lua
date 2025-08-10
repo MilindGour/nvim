@@ -33,4 +33,5 @@ require("lazy").setup({
 	require("plugins.lualine"), -- Lua line status bar
 	require("plugins.treesitter"), -- Treesitter for syntax better highlighting
 	require("plugins.noice"), -- Replacing commandline with popups
+	require("plugins.flash"), -- Flash search
 })
