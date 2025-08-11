@@ -1,7 +1,16 @@
 return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
-	opts = {},
+	opts = {
+		preset = "helix",
+		delay = 500,
+		spec = {
+			{ "<leader>b", group = "Buffer" },
+			{ "<leader>f", group = "Flash" },
+			{ "<leader>g", group = "Git" },
+			{ "<leader>s", group = "Search Telescope" },
+		},
+	},
 	keys = {
 		{
 			"<leader>?",
