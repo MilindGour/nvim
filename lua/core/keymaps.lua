@@ -30,4 +30,11 @@ h.nmap("<leader><Tab>", "<cmd>b#<CR>", { desc = "Move to alternate buffer" })
 h.nmap("<leader>D", vim.diagnostic.open_float, { desc = "Open Diagnostics" })
 
 -- Toggle line wrapping
-vim.keymap.set("n", "<leader>lw", "<cmd>set wrap!<CR>")
+vim.keymap.set("n", "<leader>lw", function()
+	vim.o.wrap = not vim.o.wrap
+	if vim.o.wrap then
+		print("Line wrap enabled")
+	else
+		print("Line wrap disabled")
+	end
+end)

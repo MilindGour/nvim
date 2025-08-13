@@ -9,7 +9,7 @@ return {
 		},
 		lazy = false, -- neo-tree will lazily load itself
 		keys = {
-			{ "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle Neo-tree [E]xplorer" } },
+			{ "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle neo-tree" } },
 		},
 		config = function()
 			local neotree = require("neo-tree")
