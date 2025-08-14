@@ -30,11 +30,15 @@ h.nmap("<leader><Tab>", "<cmd>b#<CR>", { desc = "Move to alternate buffer" })
 h.nmap("<leader>D", vim.diagnostic.open_float, { desc = "Open Diagnostics" })
 
 -- Toggle line wrapping
-vim.keymap.set("n", "<leader>lw", function()
+h.nmap("<leader>lw", function()
 	vim.o.wrap = not vim.o.wrap
 	if vim.o.wrap then
 		print("Line wrap enabled")
 	else
 		print("Line wrap disabled")
 	end
-end)
+end, { desc = "Toggle Line Wrap" })
+
+-- q to quit current window, Q to quit everything
+h.nmap("<leader>q", "<cmd>q<CR>", { desc = "Close current window" })
+h.nmap("<leader>Q", "<cmd>qa<CR>", { desc = "Close all windows" })
