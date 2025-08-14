@@ -15,6 +15,13 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { silent = true, desc = "Cle
 vim.keymap.set("v", "<", "<gv", { noremap = true, silent = true })
 vim.keymap.set("v", ">", ">gv", { noremap = true, silent = true })
 
+-- <leader>p to duplicate selection below
+vim.keymap.set("x", "<leader>p", function()
+	if vim.fn.mode() == "V" then
+		vim.cmd("normal! y'>p")
+	end
+end, { desc = "Duplicate selection below" })
+
 -- general window movements
 h.nmap("<C-h>", "<C-w>h", { desc = "Move to left window" })
 h.nmap("<C-l>", "<C-w>l", { desc = "Move to right window" })

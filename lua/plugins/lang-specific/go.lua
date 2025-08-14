@@ -12,6 +12,8 @@ return {
 	keys = {
 		{ "<leader>c1", "<cmd>GoTestFunc<CR>", { desc = "Test Function" } },
 		{ "<leader>c2", "<cmd>GoAddAllTest<CR>", { desc = "Add All Tests" } },
+		{ "<leader>c3", "<cmd>GoAddTest<CR>", { desc = "Add Test to this" } },
+		{ "<leader>c4", "<cmd>GoAlt<CR>", { desc = "Goto alt file" } },
 	},
 	config = function(lp, opts)
 		require("go").setup(opts)

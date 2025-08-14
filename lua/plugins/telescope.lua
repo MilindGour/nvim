@@ -11,6 +11,9 @@ return {
 			path_display = { "truncate" },
 			selection_caret = "󰁔 ",
 			wrap_results = true,
+			layout_config = {
+				width = 0.99,
+			},
 			mappings = {
 				i = {
 					["<C-h>"] = "which_key",
@@ -25,6 +28,9 @@ return {
 					width = 0.99,
 					preview_width = 0.6,
 				},
+			},
+			lsp_document_symbols = {
+				symbol_width = 0.9,
 			},
 		},
 	},
