@@ -23,7 +23,7 @@ require("lazy").setup({
 	require("plugins.indent-blankline"), -- Indent lines in editor
 	require("plugins.dial"), -- Toggle true/false, numbers etc.
 	require("plugins.lsp"), -- Toggle true/false, numbers etc.
-	require("plugins.autocompletion"), -- Autocompletion engine
+	require("plugins.blink"), -- Autocompletion engine
 	require("plugins.conform"), -- Formatter
 	require("plugins.which-key"), -- Display keymap on screen.
 	require("plugins.gitsigns"), -- Git Signs
