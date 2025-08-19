@@ -176,6 +176,7 @@ return {
 			},
 			html = { filetypes = { "html", "twig", "hbs" } },
 			cssls = {},
+			svelte = {},
 			tailwindcss = {},
 			jsonls = {},
 			yamlls = {},
