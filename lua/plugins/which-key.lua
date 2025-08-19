@@ -8,7 +8,7 @@ return {
 			{ "<leader>b", group = "Buffer" },
 			{ "<leader>f", group = "Flash" },
 			{ "<leader>g", group = "Git" },
-			{ "<leader>s", group = "Search Telescope" },
+			{ "<leader>s", group = "Search" },
 		},
 	},
 	keys = {

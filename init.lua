@@ -17,9 +17,9 @@ vim.opt.rtp:prepend(lazypath)
 -- Set up plugins
 require("lazy").setup({
 	require("plugins.themes.catppuccin"), -- Current theme
-	require("plugins.neotree"), -- File explorer on the right <leader-e>
+	-- require("plugins.neotree"), -- File explorer on the right <leader-e>
 	require("plugins.bufferline"), -- Tabs on the top
-	require("plugins.telescope"), -- Telescope, bruh! Open files quickly
+	-- require("plugins.telescope"), -- Telescope, bruh! Open files quickly
 	require("plugins.indent-blankline"), -- Indent lines in editor
 	require("plugins.dial"), -- Toggle true/false, numbers etc.
 	require("plugins.lsp"), -- Toggle true/false, numbers etc.

@@ -14,10 +14,9 @@ return {
 				close_icon = "󰅖",
 				offsets = {
 					{
-						filetype = "neo-tree",
+						filetype = "snacks_layout_box",
 						text_align = "left",
-						text = "File Explorer",
-						separator = false,
+						separator = true,
 					},
 				},
 				separator_style = { "", "" },
