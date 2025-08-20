@@ -15,7 +15,7 @@ return {
 				explorer = {
 					layout = {
 						layout = {
-							width = 30,
+							width = 40,
 						},
 					},
 				},
@@ -65,6 +65,13 @@ return {
 				Snacks.lazygit.log()
 			end,
 			desc = "Open Git log",
+		},
+		{
+			"<leader>gs",
+			function()
+				Snacks.picker.git_status()
+			end,
+			desc = "Open Git Status",
 		},
 
 		-- Pickers Configuration
@@ -123,6 +130,27 @@ return {
 				Snacks.picker.colorschemes()
 			end,
 			desc = "Search Colorschemes",
+		},
+		{
+			"<leader>sg",
+			function()
+				Snacks.picker.grep()
+			end,
+			desc = "Search Grep",
+		},
+		{
+			"<leader>sG",
+			function()
+				Snacks.picker.grep_word()
+			end,
+			desc = "Search Grep Word",
+		},
+		{
+			"<leader>sP",
+			function()
+				Snacks.picker()
+			end,
+			desc = "Search Snack Pickers",
 		},
 	},
 }
