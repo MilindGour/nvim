@@ -11,6 +11,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function(args)
+		---@diagnostic disable-next-line: different-requires
 		require("conform").format({ bufnr = args.buf })
 	end,
 })

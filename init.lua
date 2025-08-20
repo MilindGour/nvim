@@ -3,8 +3,7 @@ require("core.keymaps")
 require("core.options")
 require("core.autocmds")
 
--- TODO: Do this and that
--- Set up the Lazy plugin manager
+-- NOTE: Set up the Lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -15,7 +14,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Set up plugins
+-- NOTE: Set up plugins
 require("lazy").setup({
 	require("plugins.themes.catppuccin"), -- Current theme
 	-- require("plugins.neotree"), -- File explorer on the right <leader-e>

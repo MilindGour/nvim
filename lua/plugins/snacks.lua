@@ -159,5 +159,12 @@ return {
 			end,
 			desc = "Search Todo Comments",
 		},
+		{
+			"<leader>sr",
+			function()
+				Snacks.picker.recent()
+			end,
+			desc = "Search Recent files",
+		},
 	},
 }
