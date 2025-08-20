@@ -152,5 +152,12 @@ return {
 			end,
 			desc = "Search Snack Pickers",
 		},
+		{
+			"<leader>st",
+			function()
+				Snacks.picker.todo_comments()
+			end,
+			desc = "Search Todo Comments",
+		},
 	},
 }

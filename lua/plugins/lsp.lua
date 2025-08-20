@@ -1,5 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
+	event = "InsertEnter",
 	dependencies = {
 		{ "mason-org/mason.nvim", config = true }, -- NOTE: Must be loaded before dependants
 		-- mason-lspconfig:

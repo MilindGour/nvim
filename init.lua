@@ -36,6 +36,7 @@ require("lazy").setup({
 	require("plugins.noice"), -- Replacing commandline with popups
 	require("plugins.flash"), -- Flash search
 	require("plugins.vim-tmux-navigator"), -- Vim Tmux hjkl keys
+	require("plugins.trouble"), -- Trouble plugin for listing issues, and others
 
 	-- Language specific plugins
 	require("plugins.lang-specific.go"),
