@@ -24,7 +24,7 @@ require("lazy").setup({
 	require("plugins.dial"), -- Toggle true/false, numbers etc.
 	require("plugins.lsp"), -- Toggle true/false, numbers etc.
 	require("plugins.blink"), -- Autocompletion engine
-	require("plugins.conform"), -- Formatter
+	-- require("plugins.conform"), -- Formatter (Commented out because its already there in autocmds)
 	require("plugins.which-key"), -- Display keymap on screen.
 	require("plugins.gitsigns"), -- Git Signs
 	require("plugins.misc"), -- Misc plugins
