@@ -3,6 +3,7 @@ require("core.keymaps")
 require("core.options")
 require("core.autocmds")
 
+-- TODO: Do this and that
 -- Set up the Lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -17,9 +18,9 @@ vim.opt.rtp:prepend(lazypath)
 -- Set up plugins
 require("lazy").setup({
 	require("plugins.themes.catppuccin"), -- Current theme
-	require("plugins.neotree"), -- File explorer on the right <leader-e>
+	-- require("plugins.neotree"), -- File explorer on the right <leader-e>
 	require("plugins.bufferline"), -- Tabs on the top
-	require("plugins.telescope"), -- Telescope, bruh! Open files quickly
+	-- require("plugins.telescope"), -- Telescope, bruh! Open files quickly
 	require("plugins.indent-blankline"), -- Indent lines in editor
 	require("plugins.dial"), -- Toggle true/false, numbers etc.
 	require("plugins.lsp"), -- Toggle true/false, numbers etc.

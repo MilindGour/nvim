@@ -7,7 +7,7 @@ return {
 				javascript = { "prettierd", "prettier", stop_after_first = true },
 				go = { "goimports", "gofmt" },
 				svelte = { "prettier" },
-				jsp = { "html_beautify" },
+				-- jsp = { "html_beautify" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
