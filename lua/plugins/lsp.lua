@@ -115,6 +115,13 @@ return {
 						end
 					end, "Toggle Inlay Hints")
 				end
+
+				-- The followin code creates keymap for folding
+				-- using nvim-ufo
+				-- if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_foldingRange) then
+				-- 	vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+				-- 	vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+				-- end
 			end,
 		})
 
@@ -124,6 +131,12 @@ return {
 		-- So, we create new capabilities with nvim cmp, and then broadcast that to the servers.
 		local capabilities = vim.lsp.protocol.make_client_capabilities()
 		capabilities = vim.tbl_deep_extend("force", capabilities, require("blink.cmp").get_lsp_capabilities())
+
+		-- extend capabilities to include code folding so that nvim-ufo can handle it
+		capabilities.textDocument.foldingRange = {
+			dynamicRegistration = false,
+			lineFoldingOnly = true,
+		}
 
 		-- Enable the following language servers
 		--

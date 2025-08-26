@@ -79,7 +79,7 @@ return {
 			},
 		},
 		explorer = { enabled = true },
-		input = { enabled = true },
+		input = {},
 		picker = {
 			enabled = true,
 			sources = {
@@ -143,6 +143,13 @@ return {
 				Snacks.picker.git_status()
 			end,
 			desc = "Open Git Status",
+		},
+		{
+			"<leader>gd",
+			function()
+				Snacks.picker.git_diff()
+			end,
+			desc = "Open Git Diff",
 		},
 
 		-- Pickers Configuration

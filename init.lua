@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- NOTE: Set up plugins
 require("lazy").setup({
-	require("plugins.themes.catppuccin"), -- Current theme
+	require("plugins.themes.tokyonight"), -- Current theme
 	-- require("plugins.neotree"), -- File explorer on the right <leader-e>
 	require("plugins.bufferline"), -- Tabs on the top
 	-- require("plugins.telescope"), -- Telescope, bruh! Open files quickly
@@ -32,10 +32,12 @@ require("lazy").setup({
 	require("plugins.snacks"), -- Snacks plugins
 	require("plugins.lualine"), -- Lua line status bar
 	require("plugins.treesitter"), -- Treesitter for syntax better highlighting
-	require("plugins.noice"), -- Replacing commandline with popups
+	-- require("plugins.noice"), -- Replacing commandline with popups
 	require("plugins.flash"), -- Flash search
 	require("plugins.vim-tmux-navigator"), -- Vim Tmux hjkl keys
 	require("plugins.trouble"), -- Trouble plugin for listing issues, and others
+	require("plugins.nvim-ufo"), -- Nvim UFO for code folding support
+	require("plugins.illuminate"), -- Goto next / prev reference helper
 
 	-- Language specific plugins
 	require("plugins.lang-specific.go"),
