@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- NOTE: Set up plugins
 require("lazy").setup({
-	require("plugins.themes.tokyonight"), -- Current theme
+	require("plugins.themes.rose-pine"), -- Current theme
 	-- require("plugins.neotree"), -- File explorer on the right <leader-e>
 	require("plugins.bufferline"), -- Tabs on the top
 	-- require("plugins.telescope"), -- Telescope, bruh! Open files quickly

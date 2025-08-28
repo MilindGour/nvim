@@ -43,6 +43,7 @@ vim.opt.formatoptions:remove({ "c", "r", "o" }) -- Don't insert the current comm
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles") -- Separate Vim plugins from Neovim in case Vim still in use (default: includes this path if Vim is installed)
 
 vim.diagnostic.config({ virtual_text = true }) -- Enable inline diagnostics
+vim.o.winborder = "rounded"
 
 -- nvim-ufo folding related config
 vim.o.foldcolumn = "0" -- '0' is not bad
