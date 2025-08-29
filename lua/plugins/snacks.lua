@@ -81,6 +81,25 @@ return {
 		explorer = { enabled = true },
 		input = {},
 		picker = {
+			matcher = {
+				history_bonus = true,
+				frecency = true,
+			},
+			layouts = {
+				default = {
+					fullscreen = true,
+					cycle = false,
+					layout = {
+						width = 0.90,
+					},
+				},
+			},
+			formatters = {
+				file = {
+					filename_first = true,
+					truncate = 60,
+				},
+			},
 			enabled = true,
 			sources = {
 				explorer = {

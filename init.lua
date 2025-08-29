@@ -22,7 +22,7 @@ require("lazy").setup({
 	-- require("plugins.telescope"), -- Telescope, bruh! Open files quickly
 	require("plugins.indent-blankline"), -- Indent lines in editor
 	require("plugins.dial"), -- Toggle true/false, numbers etc.
-	require("plugins.lsp"), -- Toggle true/false, numbers etc.
+	require("plugins.lsp"), -- LSP Language Server Protocol
 	require("plugins.blink"), -- Autocompletion engine
 	require("plugins.conform"), -- Formatter (Commented out because its already there in autocmds)
 	require("plugins.which-key"), -- Display keymap on screen.
