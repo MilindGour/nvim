@@ -93,6 +93,19 @@ return {
 						width = 0.90,
 					},
 				},
+				dropdown = {
+					fullscreen = true,
+					cycle = false,
+					layout = {
+						width = 0.90,
+					},
+					formatters = {
+						file = {
+							filename_first = true,
+							truncate = 999,
+						},
+					},
+				},
 			},
 			formatters = {
 				file = {
@@ -262,6 +275,13 @@ return {
 				Snacks.picker.recent()
 			end,
 			desc = "Search Recent files",
+		},
+		{
+			"<leader>sR",
+			function()
+				Snacks.picker.resume()
+			end,
+			desc = "Search Resume last",
 		},
 	},
 }

@@ -3,6 +3,7 @@ return {
 	config = function()
 		require("rose-pine").setup({
 			highlight_groups = {
+				Visual = { bg = "#AAAAAA", fg = "#000000", inherit = false },
 				CursorLine = { bg = "#444444" },
 				LspInlayHint = { bg = "NONE", fg = "#777777", blend = 100 },
 				BlinkCmpDoc = { bg = "NONE" },
