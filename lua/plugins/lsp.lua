@@ -40,7 +40,10 @@ return {
 				-- Jump to the definition of the word under your cursor.
 				--  This is where a variable was first declared, or where a function is defined, etc.
 				--  To jump back, press <C-t>.
-				map("gd", Snacks.picker.lsp_definitions, "Goto Definition")
+				map("gd", function()
+					Snacks.picker.lsp_definitions()
+					vim.cmd("normal! zt")
+				end, "Goto Definition")
 
 				-- Find references for the word under your cursor.
 				map("gr", Snacks.picker.lsp_references, "Goto References")
