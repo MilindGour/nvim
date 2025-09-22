@@ -158,16 +158,23 @@ return {
 		{
 			"<leader>gl",
 			function()
-				Snacks.lazygit.log_file()
+				Snacks.picker.git_log_file()
 			end,
 			desc = "Open Git filelog",
 		},
 		{
 			"<leader>gL",
 			function()
-				Snacks.lazygit.log()
+				Snacks.picker.git_log()
 			end,
 			desc = "Open Git log",
+		},
+		{
+			"<leader>gn",
+			function()
+				Snacks.picker.git_log_line()
+			end,
+			desc = "Open Git Line log",
 		},
 		{
 			"<leader>gs",
@@ -247,6 +254,17 @@ return {
 				Snacks.picker.grep()
 			end,
 			desc = "Search Grep",
+		},
+		{
+			"<leader>sf",
+			function()
+				Snacks.picker.files({
+					search = function(picker)
+						return picker:word()
+					end,
+				})
+			end,
+			desc = "Search Files word",
 		},
 		{
 			"<leader>sG",
