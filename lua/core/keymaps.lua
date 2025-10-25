@@ -49,3 +49,10 @@ end, { desc = "Toggle Line Wrap" })
 -- q to quit current window, Q to quit everything
 h.nmap("<leader>q", "<cmd>q<CR>", { desc = "Close current window" })
 h.nmap("<leader>Q", "<cmd>qa<CR>", { desc = "Close all windows" })
+
+h.nmap("]e", function()
+	vim.diagnostic.jump({ count = 1, float = true, severity = "ERROR" })
+end, { desc = "Goto Next Error" })
+h.nmap("[e", function()
+	vim.diagnostic.jump({ count = -1, float = true, severity = "ERROR" })
+end, { desc = "Goto Previous Error" })
