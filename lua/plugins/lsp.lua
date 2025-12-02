@@ -2,7 +2,7 @@ return {
 	"neovim/nvim-lspconfig",
 	event = "InsertEnter",
 	dependencies = {
-		{ "mason-org/mason.nvim", config = true }, -- NOTE: Must be loaded before dependants
+		{ "mason-org/mason.nvim", config = true, cmd = "Mason" }, -- NOTE: Must be loaded before dependants
 		-- mason-lspconfig:
 		-- - Bridges the gap between LSP config names (e.g. "lua_ls") and actual Mason package names (e.g. "lua-language-server").
 		-- - Used here only to allow specifying language servers by their LSP name (like "lua_ls") in `ensure_installed`.
